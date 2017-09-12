@@ -79,7 +79,10 @@ for idx, pic in enumerate(avgPics):
 		startName = picNames[int(AVG_PIC_IDX[idx-1]*(nPicFiles) + 1)]
 	except IndexError:
 		startName = picNames[0]
-	endName = picNames[int(AVG_PIC_IDX[idx]*(nPicFiles) - 1)]
+	try: 
+		endName = picNames[int(AVG_PIC_IDX[idx]*(nPicFiles))]
+	except IndexError:
+		endName = picNames[-1]
 
 	startName = startName[0:4]
 	endName = endName[0:4]
