@@ -33,8 +33,6 @@ def getImgIndex(picPosition):
 
 # an array to hold our averaged picture array(s)
 avgPics = [np.zeros((IMG_SIZE, IMG_SIZE, 3), np.float) for i in range(N_AVERAGES)]
-# for i in range(N_AVERAGES):
-# 	avgPics.append(np.zeros((IMG_SIZE, IMG_SIZE, 3), np.float))
 
 # get file names
 try:
